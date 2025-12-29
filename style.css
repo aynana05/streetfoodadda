@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #4a0000, #7b0000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+nav a {
+    color: #f5c400;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #f5c400;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(circle, #7b0000, #1b1b1b);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #f5c400;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px 0 30px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    background-color: #f5c400;
+    border: none;
+    color: #4a0000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #ffffff;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+section h2 {
+    color: #f5c400;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* MENU & FEATURED */
+.cards, .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card, .food-card {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover, .food-card:hover {
+    transform: scale(1.05);
+}
+
+.card img, .food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3, .caption {
+    padding: 15px;
+    color: #f5c400;
+    font-size: 20px;
+}
+
+/* GLOBAL IMAGE FIX */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADER LOGO - BIG & CIRCULAR */
+.logo img {
+    width: 120px;          /* Make it bigger */
+    height: 120px;         /* Same as width for perfect circle */
+    border-radius: 50%;    /* Makes it circular */
+    object-fit: cover;     /* Keeps image proportioned */
+    display: block;
+}
+.food-desc {
+    padding: 10px 15px;
+    color: #ffd700; /* golden yellow, matches theme */
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+/* REVIEWS */
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.review-card {
+    background: #1a1a1a;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.review-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+ margin: 0 auto 8px;
+    margin-top: -12px;
+}
+
+.review-card p {
+    margin: 5px 0 10px;
+    color: #eee;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.review-card h4 {
+    margin: 0;
+    color: #f5c400;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4a0000;
+    text-align: center;
+    padding: 20px;
+    color: #f5c400;
+    margin-top: 60px;
+}
